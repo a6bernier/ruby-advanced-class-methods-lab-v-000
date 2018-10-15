@@ -52,8 +52,9 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    split_file = filename.split(", ")
-    self.new_by_name(split_file)
+    split_file = ""
+    split_file << filename.split(", ")
+    self.new_by_name(split_files)
   end
 
 
