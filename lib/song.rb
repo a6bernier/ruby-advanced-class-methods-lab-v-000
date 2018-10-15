@@ -15,6 +15,6 @@ class Song
     @artist_name = artist_name
   end
 
-  end
+
 
 end
