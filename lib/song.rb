@@ -52,7 +52,13 @@ class Song
   end
 
   def self.new_from_filename(filename)
-
+    filename.collect do |data|
+      parsed = data.split(", ")
+      name = data[0]
+      title = data[1]
+      filetype = data[2]
+      self.create_by_name(name)
+      self.create_from_filename(title, filetype)
   end
 
 
