@@ -40,10 +40,10 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-    if self.find_by_name(name)
-      self.find_by_name(name)
+    if self.find_by_name(name) #if class Song uses the find_by_name methods and matches the variable name to a song within @all...
+      self.find_by_name(name) #find and print the song name
     else
-      self.create_by_name(name)
+      self.create_by_name(name) #else create a new song by name and print
     end
   end
 
