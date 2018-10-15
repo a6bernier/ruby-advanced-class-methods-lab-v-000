@@ -58,7 +58,7 @@ class Song
       title = data[1]
       filetype = data[2]
       self.create_by_name(name)
-      self.create_from_filename(title, filetype)
+      self.create_from_filename(title)
   end
 
 
