@@ -46,6 +46,8 @@ class Song
     #or create a new song with the name and return the song instance
     if find_by_name(name) == name
       name
+    else
+      create_by_name(name)
   end
 
 
